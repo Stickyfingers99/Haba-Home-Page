@@ -1,0 +1,727 @@
+header {
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Barlow";
+  overflow-x: hidden;
+}
+
+.custom-hover {
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.custom-hover:hover {
+  color: #662d91;
+}
+
+.nd {
+  font-family: "Mulish", sans-serif;
+  color: #616161;
+  font-size: 25px;
+  line-height: 46.875px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 170px;
+  left: 20px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.overlay p {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.overlay button {
+  background-color: #662d91;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+}
+
+section {
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  padding-top: 15px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 3;
+}
+
+.slide1.active,
+.slide2.active,
+.slide3.active,
+.slide4.active {
+  opacity: 1;
+  z-index: 10;
+}
+
+.text-section {
+  text-align: center;
+  margin-top: 0rem;
+  z-index: 1;
+  position: relative;
+}
+
+.habaVid1 {
+  height: 600px;
+  width: 1050px;
+}
+
+.boy {
+  margin-bottom: 100px;
+}
+
+.boy > img {
+  margin-top: 80px;
+  height: 550px;
+  width: 100vw;
+}
+
+.boyButton {
+  background-color: #662d91;
+}
+
+.text-center {
+  font-family: "Epilogue", sans-serif;
+  text-align: center;
+  align-items: center;
+  line-height: 53px;
+  font-size: 40px;
+}
+
+.p2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 25px;
+  line-height: 46.875px;
+  padding-bottom: 30px;
+}
+
+.appleButton {
+  font-size: 18px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.googleButton {
+  font-size: 18px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+/* .gridImage1,
+.gridImage2,
+.gridImage3 {
+  height: 360px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+.gridImage1 img,
+.gridImage2 img,
+.gridImage3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay2 {
+  background-color: #622d91;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.overlay2 p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.gridImage1:hover .overlay2,
+.gridImage2:hover .overlay2,
+.gridImage3:hover .overlay2 {
+  opacity: 0; /* Hide overlay on hover 
+} */
+
+.chooseHaba {
+  padding-top: 59px;
+}
+
+.chooseHabaText {
+  font-family: "Epilogue", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.chooseHabaButton {
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: normal;
+  background-color: #662d91;
+  color: white;
+  margin-right: 150px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.partners {
+  font-family: "Epilogue", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.viewMore {
+  background-color: #622d91;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow1,
+.arrow2 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid #622d91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.arrow1 svg,
+.arrow2 svg {
+  color: #622d91;
+}
+
+.arrow1:hover,
+.arrow2:hover {
+  margin: 10px;
+  background-color: #622d91;
+  border-color: #622d91;
+}
+
+.arrow1:hover svg,
+.arrow2:hover svg {
+  color: white;
+}
+.booter {
+  background-color: #622d91;
+}
+/* .footer {
+  background-color: #622d91;
+} */
+
+/* .footer h2 {
+  font-family: "Epilogue", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+.footer1 {
+  padding-bottom: 110px;
+}
+
+.footer1 p {
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.weakfeet {
+  margin-bottom: 4px;
+  padding-right: 236px;
+}
+
+.footer2 p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.hh2 {
+  padding-bottom: 10px;
+} */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.elementor-social-icons-wrapper .fab {
+  font-size: 24px;
+  margin-right: 15px; /* Spacing between icons */
+}
+
+.elementor-social-icon-twitter .fab {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.elementor-social-icon-linkedin .fab {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.elementor-social-icon-facebook .fab {
+  color: #1877f2; /* Facebook blue */
+}
+
+.elementor-social-icon-instagram .fab {
+  color: #ee2a7b; /* Instagram pink/red */
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.elementor-social-icons-wrapper .fab {
+  font-size: 19px;
+  padding: 10px; /* Space inside the square */
+  display: inline-block;
+  margin-right: 15px; /* Spacing between icons */
+}
+
+.elementor-social-icon-twitter .fab {
+  color: #ffffff;
+  background-color: #1da1f2; /* Twitter blue background */
+}
+
+.elementor-social-icon-linkedin .fab {
+  color: #ffffff;
+  background-color: #0077b5; /* LinkedIn blue background */
+}
+
+.elementor-social-icon-facebook .fab {
+  color: #ffffff;
+  background-color: #1877f2; /* Facebook blue background */
+}
+
+.elementor-social-icon-instagram .fab {
+  color: #ffffff;
+  background-color: #ee2a7b; /* Instagram Pink/red background */
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  background-color: #25d366; /* WhatsApp green background */
+  color: white; /* Icon color */
+  padding: 10px;
+}
+
+.call-icon {
+  background-color: transparent; /* No background for the phone icon */
+  color: white; /* White icon color */
+}
+
+/* Icon size adjustment */
+.whatsapp-icon i,
+.call-icon i {
+  font-size: 18px;
+}
+@media (max-width: 1300px) {
+  .chooseHabaText {
+    font-family: "Epilogue", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: bold;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    font-family: "Barlow";
+    overflow-x: hidden;
+  }
+  .overlay {
+    position: absolute;
+
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .overlay p {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 130px;
+    left: 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .overlay p {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .overlay button {
+    background-color: #662d91;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
+  section {
+    position: relative;
+    height: 85vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4 {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    padding-top: 15px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 3;
+  }
+
+  .slide1.active,
+  .slide2.active,
+  .slide3.active,
+  .slide4.active {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .text-section {
+    text-align: center;
+    margin-top: 0rem;
+    z-index: 1;
+    position: relative;
+  }
+  .gridImage1,
+  .gridImage2,
+  .gridImage3 {
+    height: 360px;
+    width: 650px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .gridImage1 img,
+  .gridImage2 img,
+  .gridImage3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay2 {
+    background-color: #622d91;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .overlay2 p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .gridImage1:hover .overlay2,
+  .gridImage2:hover .overlay2,
+  .gridImage3:hover .overlay2 {
+    opacity: 0; /* Hide overlay on hover */
+  }
+  .chooseHabaText {
+    font-family: "Epilogue", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    padding-right: 50px;
+  }
+
+  .chooseHabaButton {
+    font-family: "Barlow";
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: normal;
+    background-color: #662d91;
+    color: white;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    font-family: "Barlow";
+    overflow-x: hidden;
+  }
+  .overlay {
+    position: absolute;
+    color: white;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .overlay p {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .overlay button {
+    background-color: #662d91;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  section {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4 {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    padding-top: 24px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 3;
+  }
+
+  .slide1.active,
+  .slide2.active,
+  .slide3.active,
+  .slide4.active {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .nd {
+    font-family: "Mulish", sans-serif;
+    color: #616161;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .text-center {
+    font-family: "Epilogue", sans-serif;
+    text-align: center;
+    align-items: center;
+    line-height: 43px;
+    font-size: 30px;
+  }
+
+  .p2 {
+    font-family: "Mulish", sans-serif;
+    font-size: 30px;
+    line-height: 46.875px;
+    padding-bottom: 20px;
+  }
+  .appleButton {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .googleButton {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .chooseHabaText {
+    font-family: "Epilogue", sans-serif;
+    padding-left: 335px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .chooseHabaButton {
+    font-family: "Barlow";
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: normal;
+    background-color: #662d91;
+    color: white;
+    margin-right: 500px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .boy {
+    margin-bottom: 25px;
+  }
+
+  .boy > img {
+    margin-top: 80px;
+    height: 550px;
+  }
+  .gridImage1,
+  .gridImage2,
+  .gridImage3 {
+    height: 360px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+  }
+  .gridImage1 img,
+  .gridImage2 img,
+  .gridImage3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay2 {
+    background-color: #622d91;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .overlay2 p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .gridImage1:hover .overlay2,
+  .gridImage2:hover .overlay2,
+  .gridImage3:hover .overlay2 {
+    opacity: 0; /* Hide overlay on hover */
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*radial-gradient(
+    circle at 30% 30%,
+    #feda75,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+    transform transition-transform hover:translate-x-2
+  ); /* Instagram gradient
+*/

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>haba insure</title>
+  </head>
+
+  <header class="lg:hidden pt-3">
+    <div class="flex flex-row justify-between">
+        <div>
+            <a href="index.html">
+                <img src="public/images/Haba_Logo_True_Colour-1.png" class="ml-3 md:ml-10 lg:ml-10 w-32 cursor-pointer" />
+            </a>
+        </div>
+        <div id="menu-toggle" class="lg:hidden mr-3 cursor-pointer" style="background-color: #622d91;">
+            <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="text-white w-12 h-10 cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="font-bold w-12 h-14 py-1.5 px-1 hidden cursor-pointer" style="background-color: white; color:#622d91;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden flex-col items-center text-white w-full h-full absolute top-0 right-0 transform translate-x-full     transition-transform duration-300 pt-5" style="background-color: #622d91; z-index: 50; margin-top: 83px;">
+        <ul style="font-size: 18px;">
+          <li class="flex flex-row pl-5 cursor-pointer">About <span><span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 ml-1 h-10 "
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span></span></li>
+
+          <div class="About2 pl-5 hidden" style="font-size: 18px;">
+            <li class="py-5 cursor-pointer" data-target="About2"> 
+              Who are we 
+            </li>
+      
+            <li class="py-5 cursor-pointer" data-target="About2"> 
+              Contact
+            </li>
+          </div>
+
+          <li class="flex flex-row pt-10 pl-5 cursor-pointer">Products<span><span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 ml-1 h-10  "
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span></span></li>
+
+          <div class="Products2 pl-5 hidden" style="font-size: 18px;">
+            <li class="py-5 cursor-pointer" data-target="Product2"> 
+              Health Insurance
+            </li>
+            <li class="py-5 cursor-pointer" data-target="Product2"> 
+              Motor Insurance
+            </li>
+            <li class="py-5 cursor-pointer" data-target="Product2"> 
+              Travel Insurance
+            </li>
+            <li class="py-5 cursor-pointer" data-target="Product2"> 
+              Marine Insurance
+            </li>
+            <li class="py-5 cursor-pointer" data-target="Product2"> 
+              Group Life Insurance
+            </li>
+          </div> 
+
+         
+          <li class="flex flex-row pt-10 pl-5 cursor-pointer">Services <span><span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 ml-1 h-10  "
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span></span></li>
+
+          <div class="Services2 pl-5 hidden" style="font-size: 18px;">
+            <li class="py-5 cursor-pointer" data-target="Services2"> 
+                Website development 
+            </li>
+        
+            <li class="py-5 cursor-pointer" data-target="Services2"> 
+                Mobile development
+            </li>
+          </div>
+      
+
+          <li class="flex flex-row pt-11 pl-5 cursor-pointer">Report Claims </li>
+
+          <li class="flex flex-row pt-12 pl-5 cursor-pointer">Earn with Haba </li>
+
+          <li class="flex flex-row pt-12 pl-5 cursor-pointer">Shop with Haba</li>
+
+          <li class="flex flex-row pt-12 pl-5 cursor-pointer">Media <span><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 ml-1 h-10 "
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span></li>
+          
+          <div class="Media2 hidden pl-5" style="font-size: 18px;">
+          <li class="py-5 cursor-pointer" data-target="Media2"> 
+            FAQs
+          </li>
+  
+          <li class="py-5 cursor-pointer" data-target="Media2"> 
+           Community
+          </li>
+
+          <li class="py-5" data-target="Media2"> 
+           Blogs
+          </li>
+        </div>
+
+          <li class="flex flex-row pt-10 pl-5 cursor-pointer">Careers</li>
+        </ul>
+        
+      </div>
+  </header>
+
+  <style>
+  /* Allow the page to scroll */
+  body {
+      overflow-y: auto;
+  }
+
+  /* Make the mobile menu act as an overlay from the right */
+  #mobile-menu.open {
+      transform: translateX(0);
+  }
+
+  /* Ensure the mobile menu does not block scrolling */
+  #mobile-menu {
+      position: absolute; /* Positioned relative to its parent */
+      height: 100vh;
+      overflow-y: auto; /* Allows the menu itself to scroll if needed */
+  }
+  </style>
+
+
+  <header class="hidden lg:block">
+    <div class="bg-white pt-3 md:pt-7">
+      <div class="flex flex-row lg:justify-around">
+        <div class="flex flex-row justify-between">
+          <div>
+            <a href="index.html">
+              <img
+                src="public/images/Haba_Logo_True_Colour-1.png"
+                class="ml-5 md:ml-10 lg:ml-10 w-32 cursor-pointer"
+              />
+            </a>
+          </div>
+          <div class="lg:hidden" style="background-color: #622d91;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white p-0 w-12 h-10 font-bold">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
+          
+        </div>
+
+        <div class="lg:pl-12 hidden lg:block">
+          <ul class="flex flex-row pt-5">
+            <li
+              class="custom-hover font-bold flex cursor-pointer hover:text-customPurple"
+            >
+              About
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-4 mt-1 mr-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="custom-hover font-bold flex pr-8 cursor-pointer">
+              Products
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-4 mt-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="custom-hover font-bold flex pr-8 cursor-pointer">
+              Services
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-4 mt-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
+            </li>
+
+            <li class="custom-hover font-bold pr-8 cursor-pointer">
+              Report Claims
+            </li>
+            <li class="custom-hover font-bold pr-8 cursor-pointer">
+              Shop with Haba
+            </li>
+            <li class="custom-hover font-bold pr-8 cursor-pointer">
+              Earn with Haba
+            </li>
+            <li
+              class="custom-hover font-bold flex pr-8 cursor-pointer hover:text-customPurple"
+            >
+              Media
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-4 mt-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="custom-hover font-bold pr-8 cursor-pointer">Careers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <section class="pt-0 md:pt-2 lg:pt-7">
+      <div class="slide1 relative overflow-hidden" id="slide">
+        <img
+          src="public/images/slide 1m.webp"
+          alt="Slide 1"
+          class="img object-cover"
+        />
+        <div class="overlay">
+          <p class="lg:pl-10 font-bold">Hello!</p>
+          <p class="hidden md:block lg:pl-10 font-bold">
+            Do you know that insurance has<br />
+            just been made easy from the<br />comfort of your home?
+          </p>
+          <p class="md:hidden lg:pl-10 font-bold">
+            Do you know that insurance has just been made easy from the comfort
+            of your home?
+          </p>
+          <button
+            class="button mt-5 lg:ml-10 py-2 lg:py-3 rounded-md lg:rounded-sm text-2xl"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="slide2 relative overflow-hidden">
+        <img
+          src="public/images/zzzss.jpg"
+          alt="Slide 2"
+          class="img object-cover"
+        />
+        <div class="overlay">
+          <p class="hidden md:block lg:pl-10 font-bold">
+            Unlock seamless knowledge <br />with Haba Insurtech's AI-<br />
+            Your go-to for instant &<br />
+            accurate answers!
+          </p>
+          <p class="md:hidden lg:pl-10 font-bold">
+            Unlock seamless knowledge with Haba Insurtech's AI- Your go-to for
+            instant & accurate answers!
+          </p>
+          <button
+            class="button mt-5 lg:ml-10 py-2 lg:py-3 rounded-md lg:rounded-sm text-2xl"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="slide3 relative overflow-hidden">
+        <img
+          src="public/images/slide3m.jpg"
+          alt="Slide 3"
+          class="img object-cover"
+        />
+        <div class="overlay">
+          <p class="hidden md:block lg:pl-10 font-bold">
+            Introducing Haba - Your<br />
+            easiest way to make extra<br />
+            cash
+          </p>
+          <p class="md:hidden lg:pl-10 font-bold">
+            Introducing Haba - Your easiest way to make extra cash
+          </p>
+          <button
+            class="button mt-5 lg:ml-10 py-2 lg:py-3 rounded-md lg:rounded-sm text-2xl"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="slide4 relative overflow-hidden">
+        <img
+          src="public/images/slide4m.jpg"
+          alt="Slide 4"
+          class="img object-cover"
+        />
+        <div class="overlay">
+          <p class="hidden md:block lg:pl-10 font-bold">
+            Need assistance with any of <br />our policies?
+          </p>
+          <p class="md:hidden lg:pl-10 font-bold">
+            Need assistance with any of our policies?
+          </p>
+          <button
+            class="button mt-5 lg:ml-10 py-2 lg:py-3 rounded-md lg:rounded-sm text-2xl"
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-2xl md:text-5xl text-center font-bold">
+      <p>
+        Everything made <br />
+        easy for you
+      </p>
+      <p class="nd pt-5 pb-2 lg:pb-16 font-semibold">
+        Our charming AI BOT will craft a smooth insurance experience<br />
+        for you. It couldn't be easier or faster
+      </p>
+    </div>
+
+    <div class="flex items-center justify-center w-full">
+      <video controls class="habaVid1 pt-10 pb-1 md:pb-20">
+        <source src="public/images/HabaVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="boy relative">
+      <img src="public/images/7xm.xyz769130.jpg" class="w-full object-cover" />
+      <div
+        class="absolute inset-0 bg-gray-700 bg-opacity-30 flex flex-col justify-center items-center text-white"
+      >
+        <div>
+          <p class="text-center pt-28 font-bold mb-4">
+            Download the app to get<br />started
+          </p>
+        </div>
+        <p class="p2">Get Haba, Get Covered</p>
+        <div class="flex flex-col md:flex-row pb-32">
+          <a href="https://apps.apple.com/ng/app/haba/id1664734118">
+            <button
+              class="appleButton font-semibold bg-black text-white flex items-center justify-center mr-1 mb-5 md:mb-0 py-3 rounded-md"
+            >
+              Apple Store<span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="30"
+                  viewBox="0,0,256,256"
+                >
+                  <g
+                    fill="#f9f8f8"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(10.66667,10.66667)">
+                      <path
+                        d="M16.125,1c-1.153,0.067 -2.47667,0.70934 -3.26367,1.52734c-0.711,0.744 -1.27197,1.84897 -1.04297,2.91797c1.253,0.033 2.51067,-0.62598 3.26367,-1.45898c0.703,-0.779 1.23597,-1.86633 1.04297,-2.98633zM16.19336,5.44336c-1.809,0 -2.56536,1.11133 -3.81836,1.11133c-1.289,0 -2.46734,-1.04102 -4.02734,-1.04102c-2.122,0.001 -5.34766,1.96666 -5.34766,6.59766c0,4.213 3.81766,8.88867 5.97266,8.88867c1.309,0.013 1.62634,-0.82303 3.40234,-0.83203c1.778,-0.013 2.16166,0.84303 3.47266,0.83203c1.476,-0.011 2.6287,-1.63297 3.4707,-2.91797c0.604,-0.92 0.85231,-1.38969 1.32031,-2.42969c-3.473,-0.88 -4.164,-6.48067 0,-7.63867c-0.786,-1.341 -3.08031,-2.57031 -4.44531,-2.57031z"
+                      ></path>
+                    </g>
+                  </g></svg
+              ></span>
+            </button>
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=haba.insurtech"
+          >
+            <button
+              class="googleButton bg-black text-white flex items-center justify-center ml-1 font-semibold py-3 rounded-md mr-2"
+            >
+              Google store<span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="30"
+                  viewBox="0 0 48 48"
+                >
+                  <linearGradient
+                    id="jFdG-76_seIEvf-hbjSsaa_rZwnRdJyYqRi_gr1"
+                    x1="1688.489"
+                    x2="1685.469"
+                    y1="-883.003"
+                    y2="-881.443"
+                    gradientTransform="matrix(11.64 0 0 22.55 -19615.32 19904.924)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#047ed6"></stop>
+                    <stop offset="1" stop-color="#50e6ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#jFdG-76_seIEvf-hbjSsaa_rZwnRdJyYqRi_gr1)"
+                    fill-rule="evenodd"
+                    d="M7.809,4.608c-0.45,0.483-0.708,1.227-0.708,2.194	v34.384c0,0.967,0.258,1.711,0.725,2.177l0.122,0.103L27.214,24.2v-0.433L7.931,4.505L7.809,4.608z"
+                    clip-rule="evenodd"
+                  ></path>
+                  <linearGradient
+                    id="jFdG-76_seIEvf-hbjSsab_rZwnRdJyYqRi_gr2"
+                    x1="1645.286"
+                    x2="1642.929"
+                    y1="-897.055"
+                    y2="-897.055"
+                    gradientTransform="matrix(9.145 0 0 7.7 -15001.938 6931.316)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#ffda1c"></stop>
+                    <stop offset="1" stop-color="#feb705"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#jFdG-76_seIEvf-hbjSsab_rZwnRdJyYqRi_gr2)"
+                    fill-rule="evenodd"
+                    d="M33.623,30.647l-6.426-6.428v-0.45l6.428-6.428	l0.139,0.086l7.603,4.321c2.177,1.227,2.177,3.249,0,4.493l-7.603,4.321C33.762,30.561,33.623,30.647,33.623,30.647z"
+                    clip-rule="evenodd"
+                  ></path>
+                  <linearGradient
+                    id="jFdG-76_seIEvf-hbjSsac_rZwnRdJyYqRi_gr3"
+                    x1="1722.978"
+                    x2="1720.622"
+                    y1="-889.412"
+                    y2="-886.355"
+                    gradientTransform="matrix(15.02 0 0 11.5775 -25848.943 10324.73)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#d9414f"></stop>
+                    <stop offset="1" stop-color="#8c193f"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#jFdG-76_seIEvf-hbjSsac_rZwnRdJyYqRi_gr3)"
+                    fill-rule="evenodd"
+                    d="M33.762,30.561l-6.565-6.567L7.809,43.382	c0.708,0.761,1.9,0.847,3.232,0.103L33.762,30.561"
+                    clip-rule="evenodd"
+                  ></path>
+                  <linearGradient
+                    id="jFdG-76_seIEvf-hbjSsad_rZwnRdJyYqRi_gr4"
+                    x1="1721.163"
+                    x2="1722.215"
+                    y1="-891.39"
+                    y2="-890.024"
+                    gradientTransform="matrix(15.02 0 0 11.5715 -25848.943 10307.886)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#33c481"></stop>
+                    <stop offset="1" stop-color="#61e3a7"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#jFdG-76_seIEvf-hbjSsad_rZwnRdJyYqRi_gr4)"
+                    fill-rule="evenodd"
+                    d="M33.762,17.429L11.041,4.522	c-1.33-0.761-2.524-0.658-3.232,0.103l19.386,19.369L33.762,17.429z"
+                    clip-rule="evenodd"
+                  ></path></svg
+              ></span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden lg:block chooseHaba ">
+      <div class="flex justify-center items-center">
+        <div class="chooseHabaText pr-80">Why Choose Haba</div>
+          <div class="chooseHabaButton mr-20">
+            <div class="viewMore rounded-md flex flex-row">
+              <button class="  text-white flex-row font-bold pl-5 py-3">
+                View More
+              </button>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-4 mt-0.5 mr-5 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:hidden">
+      <div class="text-center pt-5 text-2xl font-bold">Why Choose Haba</div>
+    </div>
+
+
+    <div class="hidden lg:block xl:hidden">
+      <div class="flex justify-center items-center mb-32 mt-10 mx-40">
+        <div class="grid grid-cols-3 gap-10 md:gap-10 lg:gap-10 xl:gap-2.5">
+          <div class="relative h-[360px] w-[400px] overflow-hidden rounded-lg" style="height: 360px; width:270px;">
+            <img src="public/images/7xm.xyz825017.jpg" class="w-full h-full object-cover" />
+            <div class="annoying absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center  text-white transition-opacity duration-500 ease-in-out hover:opacity-0" style="background-color: #622d91;">
+              <p class="font-bold text-center" style="font-size: 26px; line-height: 40px; ">
+                Insure with Ease, Claim <br />with confidence
+              </p>
+            </div>
+          </div>
+          <div class="relative h-[360px] w-[400px] overflow-hidden rounded-lg" style="height: 360px; width:270px;">
+            <img src="public/images/7xm.xyz398381.jpg" class="w-full h-full object-cover" />
+            <div class="annoying absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center  text-white transition-opacity duration-500 ease-in-out hover:opacity-0" style="background-color: #622d91;">
+              <p class="font-bold text-center" style="font-size: 26px; line-height: 40px;">
+                Experience first class <br />customer engagement
+              </p>
+            </div>
+          </div>
+          <div class="relative h-[360px] w-[400px] overflow-hidden rounded-lg" style="height: 360px; width:270px;">
+            <img src="public/images/7xm.xyz741372-1.jpg" class="w-full h-full object-cover" />
+            <div class="annoying absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center  text-white transition-opacity duration-500 ease-in-out hover:opacity-0" style="background-color: #622d91;">
+              <p class="font-bold text-center" style="font-size: 26px; line-height: 40px;">
+                Safeguard your future<br />
+                with AI innovation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden lg:block xl:block">
+      <div class="flex justify-center items-center mb-32 mt-10 mx-40">
+        <div class="grid grid-cols-3 gap-10 md:gap-10 lg:gap-10 xl:gap-2.5">
+          <div class="relative h-[360px] w-[400px] overflow-hidden rounded-lg" style="height: 360px; width:400px;">
+            <img src="public/images/7xm.xyz825017.jpg" class="w-full h-full object-cover" />
+            <div class="annoying absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center  text-white transition-opacity duration-500 ease-in-out hover:opacity-0" style="background-color: #622d91;">
+              <p class="font-bold text-center" style="font-size: 26px; line-height: 40px; ">
+                Insure with Ease, Claim <br />with confidence
+              </p>
+            </div>
+          </div>
+          <div class="relative h-[360px] w-[400px] overflow-hidden rounded-lg" style="height: 360px; width:400px;">
+            <img src="public/images/7xm.xyz398381.jpg" class="w-full h-full object-cover" />
+            <div class="annoying absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center  text-white transition-opacity duration-500 ease-in-out hover:opacity-0" style="background-color: #622d91;">
+              <p class="font-bold text-center" style="font-size: 26px; line-height: 40px;">
+                Experience first class <br />customer engagement
+              </p>
+            </div>
+          </div>
+          <div class="relative h-[360px] w-[400px] overflow-hidden rounded-lg" style="height: 360px; width:400px;">
+            <img src="public/images/7xm.xyz741372-1.jpg" class="w-full h-full object-cover" />
+            <div class="annoying absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center  text-white transition-opacity duration-500 ease-in-out hover:opacity-0" style="background-color: #622d91;">
+              <p class="font-bold text-center" style="font-size: 26px; line-height: 40px;">
+                Safeguard your future<br />
+                with AI innovation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:hidden">
+      <div class="flex justify-center items-center mb-10 mt-10">
+        <div class="grid grid-rows-3 gap-4 lg:gap-2.5 xl:gap-2.5">
+          <div class="gridImage1">
+            <img src="public/images/7xm.xyz825017.jpg" />
+            <div class="overlay2">
+              <p class="text-center">
+                Insure wth Ease, Claim <br />with confidence
+              </p>
+            </div>
+          </div>
+          <div class="gridImage2">
+            <img src="public/images/7xm.xyz398381.jpg" />
+            <div class="overlay2">
+              <p>Experience first class <br />customer engagement</p>
+            </div>
+          </div>
+          <div class="gridImage3">
+            <img src="public/images/7xm.xyz741372-1.jpg" />
+            <div class="overlay2">
+              <p>
+                Safeguard your future<br />
+                with AI innovation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:hidden pb-20 flex flex-row justify-center">
+
+      <div class="lg:hidden">
+        <div class="viewMore rounded-md flex flex-row">
+          <button class="  text-white flex-row font-bold pl-5 py-3">
+            View More
+          </button>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-4 mt-0.5 mr-5 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+            </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="partners pb-14">Our Partners</div>
+
+    <div class="flex flex-row items-center justify-center">
+      <div class="">
+        <div class="arrow1 rounded-full cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div
+        class="logo-container flex flex-row items-center space-x-32 overflow-hidden"
+      >
+        <img src="public/images/noortakaful.png" class="logo w-55 h-24" />
+        <img src="public/images/consolidated.png" class="logo w-60 h-16" />
+        <img src="public/images/bastion2.jpeg" class="logo w-60 h-16" />
+      </div>
+
+      <div class="">
+        <div class="arrow2 rounded-full cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hidden md:block pt-28 ">
+      <div class="booter flex flex-row justify-center space-x-28">
+
+        <div class="text-white pt-16 pb-10 pl-20" style="padding-bottom: 170px;">
+          <h1 class="text-2xl font-bold">Haba</h1>
+          <p class="font-semibold">Get Haba, Get Covered.</p>
+          <p class="font-bold contact-us">
+            Contact Us:
+            <span class="icons">
+              <a
+                href="https://wa.me/2349033287535"
+                target="_blank"
+                class="whatsapp-icon"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="tel:+2349033435330" class="call-icon">
+                <i class="fas fa-phone-alt"></i>
+              </a>
+            </span>
+          </p>
+          <p class="font-semibold">
+            16a, Alhaji Jimoh Street, Ogba 101233, Ikeja,<br />
+            Lagos, Nigeria.
+          </p>
+        </div>
+
+        <div class="pt-10 text-white" style="padding-bottom: 106px;"> 
+          <h1 class="text-2xl font-bold pb-2">Quick Links</h1>
+          <div class="space-y-2 ">
+            <p class="hover:text-black cursor-pointer font-bold">Health Insurance</p>
+            <p class="hover:text-black cursor-pointer font-bold">Marine Insurance</p>
+            <p class="hover:text-black cursor-pointer font-bold">Group Life Insurance</p>
+            <p class="hover:text-black cursor-pointer font-bold">Travel Insurance</p>
+            <p class="hover:text-black cursor-pointer font-bold">All Risk Insurance</p>
+          </div>
+        </div>
+
+        <div class="text-white flex flex-col pt-10">
+            <div class="space-y-4">
+              <h1 class="text-2xl font-bold">Follow us</h1>
+              <div class="elementor-social-icons-wrapper elementor-grid">
+                <span class="elementor-grid-item">
+                  <a
+                    class="elementor-icon elementor-social-icon elementor-social-icon-twitter"
+                    href="https://twitter.com/Usehaba_app"
+                    target="_blank"
+                  >
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </span>
+                <span class="elementor-grid-item">
+                  <a
+                    class="elementor-icon elementor-social-icon elementor-social-icon-linkedin"
+                    href="https://www.linkedin.com/company/habainsurtech/"
+                    target="_blank"
+                  >
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </span>
+                <span class="elementor-grid-item">
+                  <a
+                    class="elementor-icon elementor-social-icon elementor-social-icon-facebook"
+                    href="https://web.facebook.com/usehabaapp"
+                    target="_blank"
+                  >
+                    <span class="sr-only">Facebook</span>
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </span>
+                <span class="elementor-grid-item">
+                  <a
+                    class="elementor-icon elementor-social-icon elementor-social-icon-instagram"
+                    href="https://www.instagram.com/usehaba_app/"
+                    target="_blank"
+                  >
+                    <span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </span>
+              </div>
+              <div class="elementor-widget-container">
+                <div class="elementor-custom-embed">
+                  <iframe
+                    loading="lazy"
+                    src="https://maps.google.com/maps?q=16a%20Alhaji%20Jimoh%20Street%2C%20Ogba%20101233,%20Ikeja,%20Lagos,%20Nigeria.&t=m&z=20&output=embed&iwloc=near"
+                    title="16a Alhaji Jimoh Street, Ogba 101233, Ikeja, Lagos, Nigeria."
+                    aria-label="16a Alhaji Jimoh Street, Ogba 101233, Ikeja, Lagos, Nigeria."
+                    style="border: 0; width: 300px; height: 200px; margin-right: 20px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+
+    <div class="md:hidden pt-28 ">
+      <div class="booter flex flex-col ">
+        <div class="text-white pt-16 pb-10 ">
+          <h1 class="text-2xl font-bold">Haba</h1>
+
+          <p class="font-semibold">Get Haba, Get Covered.</p>
+          <p class="font-bold contact-us">
+            Contact Us:
+            <span class="icons">
+              <a
+                href="https://wa.me/2349033287535"
+                target="_blank"
+                class="whatsapp-icon"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="tel:+2349033435330" class="call-icon">
+                <i class="fas fa-phone-alt"></i>
+              </a>
+            </span>
+          </p>
+          <p class="font-semibold">
+            16a, Alhaji Jimoh Street, Ogba 101233, Ikeja,<br />
+            Lagos, Nigeria.
+          </p>
+
+          <div class="pt-10"> 
+          <h1 class="text-2xl font-bold pb-2">Quick Links</h1>
+          <div class="space-y-2">
+            <p class="hover:text-black cursor-pointer font-bold">Health Insurance</p>
+            <p class="hover:text-black cursor-pointer font-bold">Marine Insurance</p>
+            <p class="hover:text-black cursor-pointer font-bold">Group Life Insurance</p>
+            <p class="hover:text-black cursor-pointer font-bold">Travel Insurance</p>
+            <p class="hover:text-black cursor-pointer font-bold">All Risk Insurance</p>
+          </div>
+
+          <div class="text-white flex flex-col pt-10">
+            
+            <div class="space-y-4">
+              <h1 class="text-2xl font-bold">Follow us</h1>
+              <div class="elementor-social-icons-wrapper elementor-grid">
+                <span class="elementor-grid-item">
+                  <a
+                    class="elementor-icon elementor-social-icon elementor-social-icon-twitter"
+                    href="https://twitter.com/Usehaba_app"
+                    target="_blank"
+                  >
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </span>
+                <span class="elementor-grid-item">
+                  <a
+                    class="elementor-icon elementor-social-icon elementor-social-icon-linkedin"
+                    href="https://www.linkedin.com/company/habainsurtech/"
+                    target="_blank"
+                  >
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </span>
+                <span class="elementor-grid-item">
+                  <a
+                    class="elementor-icon elementor-social-icon elementor-social-icon-facebook"
+                    href="https://web.facebook.com/usehabaapp"
+                    target="_blank"
+                  >
+                    <span class="sr-only">Facebook</span>
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </span>
+                <span class="elementor-grid-item">
+                  <a
+                    class="elementor-icon elementor-social-icon elementor-social-icon-instagram"
+                    href="https://www.instagram.com/usehaba_app/"
+                    target="_blank"
+                  >
+                    <span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </span>
+              </div>
+              <div class="elementor-widget-container">
+                <div class="elementor-custom-embed">
+                  <iframe
+                    loading="lazy"
+                    src="https://maps.google.com/maps?q=16a%20Alhaji%20Jimoh%20Street%2C%20Ogba%20101233,%20Ikeja,%20Lagos,%20Nigeria.&t=m&z=20&output=embed&iwloc=near"
+                    title="16a Alhaji Jimoh Street, Ogba 101233, Ikeja, Lagos, Nigeria."
+                    aria-label="16a Alhaji Jimoh Street, Ogba 101233, Ikeja, Lagos, Nigeria."
+                    style="border: 0; width: 320px; height: 200px"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
