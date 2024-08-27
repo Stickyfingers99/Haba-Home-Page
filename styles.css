@@ -410,6 +410,7 @@ section {
     height: 100%;
     object-fit: cover;
   }
+
   .overlay2 {
     background-color: #622d91;
     color: white;
@@ -422,7 +423,7 @@ section {
     align-items: center;
     justify-content: center;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.2s ease-in-out; /* Default fade-in */
   }
 
   .overlay2 p {
@@ -435,8 +436,11 @@ section {
   .gridImage1:hover .overlay2,
   .gridImage2:hover .overlay2,
   .gridImage3:hover .overlay2 {
-    opacity: 0; /* Hide overlay on hover */
+    opacity: 0; /* Hide the overlay */
+    pointer-events: none; /* Allow underlying content to be interacted with */
+    transition: opacity 0.1s ease-out; /* Faster fade-out */
   }
+
   .chooseHabaText {
     font-family: "Epilogue", sans-serif;
     text-align: center;
@@ -620,6 +624,7 @@ section {
     height: 100%;
     object-fit: cover;
   }
+
   .overlay2 {
     background-color: #622d91;
     color: white;
@@ -632,7 +637,7 @@ section {
     align-items: center;
     justify-content: center;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.2s ease-in-out; /* Default fade-in */
   }
 
   .overlay2 p {
@@ -645,8 +650,11 @@ section {
   .gridImage1:hover .overlay2,
   .gridImage2:hover .overlay2,
   .gridImage3:hover .overlay2 {
-    opacity: 0; /* Hide overlay on hover */
+    opacity: 0; /* Hide the overlay */
+    pointer-events: none; /* Allow underlying content to be interacted with */
+    transition: opacity 0.1s ease-out; /* Faster fade-out */
   }
+
   .logo-container {
     display: flex;
     justify-content: center;

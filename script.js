@@ -138,3 +138,37 @@ document.querySelectorAll("#mobile-menu > ul > li").forEach((item) => {
     }
   });
 });
+
+// Select all the grid images
+const gridImages = document.querySelectorAll(
+  ".gridImage1, .gridImage2, .gridImage3"
+);
+
+// Function to reset all overlays
+function resetOverlays() {
+  gridImages.forEach((item) => {
+    const overlay = item.querySelector(".overlay2");
+    overlay.style.opacity = "1";
+    overlay.style.pointerEvents = "auto";
+  });
+}
+
+// Add touchstart event listener to each grid image
+gridImages.forEach((item) => {
+  item.addEventListener("touchstart", function (event) {
+    // Prevent the reset from happening immediately after touching the image
+    event.stopPropagation();
+
+    // Reset all overlays first
+    resetOverlays();
+
+    // Hide the overlay of the touched image
+    const overlay = this.querySelector(".overlay2");
+    overlay.style.opacity = "0";
+    overlay.style.pointerEvents = "none";
+  });
+});
+
+// Add click/touchstart event listener to the document to reset overlays when clicking elsewhere
+document.addEventListener("click", resetOverlays);
+document.addEventListener("touchstart", resetOverlays);
