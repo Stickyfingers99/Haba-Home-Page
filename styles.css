@@ -131,51 +131,6 @@ section {
   padding-right: 48px;
 }
 
-/* .gridImage1,
-.gridImage2,
-.gridImage3 {
-  height: 360px;
-  width: 400px;
-  overflow: hidden;
-  border-radius: 5px;
-  position: relative;
-}
-
-.gridImage1 img,
-.gridImage2 img,
-.gridImage3 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.overlay2 {
-  background-color: #622d91;
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.overlay2 p {
-  font-weight: bold;
-  text-align: center;
-  font-size: 26px;
-  line-height: 40px;
-}
-
-.gridImage1:hover .overlay2,
-.gridImage2:hover .overlay2,
-.gridImage3:hover .overlay2 {
-  opacity: 0; /* Hide overlay on hover 
-} */
-
 .chooseHaba {
   padding-top: 59px;
 }
@@ -253,41 +208,6 @@ section {
 .booter {
   background-color: #622d91;
 }
-/* .footer {
-  background-color: #622d91;
-} */
-
-/* .footer h2 {
-  font-family: "Epilogue", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  padding-top: 60px;
-}
-
-.footer1 {
-  padding-bottom: 110px;
-}
-
-.footer1 p {
-  font-family: "Barlow";
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.weakfeet {
-  margin-bottom: 4px;
-  padding-right: 236px;
-}
-
-.footer2 p {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-}
-
-.hh2 {
-  padding-bottom: 10px;
-} */
 
 .sr-only {
   position: absolute;
@@ -537,6 +457,16 @@ section {
     border-radius: 5px;
     font-weight: bold;
   }
+  .and {
+    font-family: "Mulish", sans-serif;
+    color: #616161;
+    font-size: 23px;
+    line-height: 38px;
+  }
+  .habaVid1 {
+    height: 600px;
+    width: 1050px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -544,6 +474,19 @@ section {
     font-family: "Barlow";
     overflow-x: hidden;
   }
+
+  .habaVid1 {
+    height: 450px;
+    width: 1050px;
+  }
+
+  .and {
+    font-family: "Mulish", sans-serif;
+    color: #616161;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
   .overlay {
     position: absolute;
     color: white;

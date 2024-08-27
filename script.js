@@ -121,9 +121,20 @@ document.querySelectorAll("#mobile-menu > ul > li").forEach((item) => {
     // Find the div with the matching class
     const targetDiv = document.querySelector(`.${targetClass}`);
 
+    // If the target div is found and is currently hidden
     if (targetDiv) {
-      // Toggle the 'hidden' class
-      targetDiv.classList.toggle("hidden");
+      if (targetDiv.classList.contains("hidden")) {
+        // Close all open dropdowns
+        document.querySelectorAll("#mobile-menu > ul > div").forEach((div) => {
+          div.classList.add("hidden");
+        });
+
+        // Open the clicked dropdown
+        targetDiv.classList.remove("hidden");
+      } else {
+        // If the clicked dropdown is open, close it
+        targetDiv.classList.add("hidden");
+      }
     }
   });
 });
